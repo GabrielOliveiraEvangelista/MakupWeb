@@ -1,0 +1,162 @@
+       R-HTML-PRODUTO.
+         exec HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/pages/productListing/productListing.css">
+    <link rel="stylesheet" href="src/pages/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <title>Compusa Software</title>
+</head>
+
+<body>
+    <input type="hidden" id="MKPGLOBAL1" name="MKPGLOBAL1" min="0" step="1" value=":WS-MKP-GLOBAL1">
+    <input type="hidden" id="MKPGLOBAL2" name="MKPGLOBAL2" min="0" step="1" value=":WS-MKP-GLOBAL2">
+    <header>
+        <nav>
+            <a onclick="history.back(-1)"><img src="src/assets/clientSearch.svg" alt=""></a>
+            <img id="btnPdf" src="src/assets/oriental.png" alt="">
+            <img id="btnPedido" src="src/assets/orderList.svg" alt="">
+        </nav>
+        <div id="nameClient">
+            <h2>:NOME-SCR155</h2>
+        </div>
+    </header>
+    <main>
+        <form action="">
+                <!--
+             end-exec
+             .
+            
+            R-HTML-PRODUTO-GRUPO.
+             exec html
+            *> -->
+            <ul class="productGroup">
+                <li>
+                    <button type="button" class="toggleButton">
+                        <h2>:DESCR-SCF992</h2>
+                        <img class="imgAdd" src="src/assets/add.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="productItem">
+                <!--
+             end-exec
+             .
+            
+            R-HTML-PRODUTO-PROD-INI.
+             exec html
+            *> -->
+                <li>
+                    <div class="boxInfo">
+                        <div class="unitCode">
+                            <h2 name=":PRODU-SCF991" id=":PRODU-SCF991">:PRODU-SCF991</h2>
+                            <h2>:UNIVE-SCF991</h2>
+                            <div class="statusColor"></div>
+                        </div>
+                        <div hidden class="profitPercentage">
+                            <h2 hidden name="LUCROPROD" id=":WS-ID-LUCRO">:WS-LUCRO-PROD</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="btnProduct">
+                        <h2>:DESCR-SCF991</h2>
+                        <img src="src/assets/arrowDownWhite.svg" alt="">
+                    </button>
+                    <div class="modalInfo">
+                        <div class="priceQnt">
+                            <div id="inputQnt">
+                                <label for="quantidade">Quantidade</label>
+                                <input class="styleInput" type="number" id=":WS-ID-QTD" name="quantidade" min="0"
+                                    step="1">
+                            </div>
+                            <div id="inputPrice">
+                                <label for="price">Preço proposto</label>
+                                <input class="styleInput" type="number" id=":WS-ID-PRECO" name="price" min="0" step="1">
+                            </div>
+                        </div>
+                        <div class="tableValueFixed">
+                            <div class="vlTotal">
+                                <h2>Valor total</h2>
+                                <p id=":WS-ID-VLTOT">:WS-VL-TOTAL</p>
+                            </div>
+                            <div hidden class="markup">
+                                <h2>Markup</h2>
+                                <p id=":WS-ID-MKP">:WS-MKP-PROD</p>
+                            </div>
+                            <div class="markup">
+                                <h2>Valor tabela</h2>
+                                <p id=":WS-ID-TBP">:WS-VL-TABELA</p>
+                            </div>
+                            <div hidden class="cost">
+                               <h2>Custo</h2>
+                               <p>:WS-PRECO-CUSTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--
+             end-exec
+             .
+
+            R-HTML-PRODUTO-PROD-FIN.
+             exec html
+            *> -->
+            </ul>
+
+                <!--
+             end-exec
+             .
+
+            R-HTML-PRODUTO-FIM.
+             exec html
+            *> -->
+            <div class="boxLateral" id="boxLateral">
+            <div class="inputs">
+                <div class="boniFrete">
+                    <div>
+                        <label for="">Bonificação</label>
+                        <input id="MKPBONIFICACAO" type="number">
+                    </div>
+                    <div>
+                        <label for="">Contrato</label>
+                        <input id="MKPCONTRATO" type="number">
+                    </div>
+                </div>
+                <div class="frePag">
+                    <h2>Pagamento</h2>
+                    <div class="toggle-container" id="containerPag">
+                        <input type="checkbox" id="togglePag" class="toggle-input">
+                        <label for="togglePag" class="toggle-label">
+                            <span class="toggle-text-avista">À prazo</span>
+                            <span class="toggle-text-prazo">À vista</span>
+                        </label>
+                    </div>
+                    <h2>Frete</h2>
+                    <div class="toggle-container" id="containerFrete">
+                        <input type="checkbox" id="toggleFrete" class="toggle-input">
+                        <label for="toggleFrete" class="toggle-label">
+                            <span class="toggle-text-avista">CIF</span>
+                            <span class="toggle-text-prazo">FOB</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-circle">
+                <h2 name="LUCRO" id="LUCRO">:WS-LUCRO-GERAL</h2>
+                <h2 name="VLTOTGERAL" id="VLTOTGERAL">:WS-VL-TOT-GERAL</h2>
+            </div>
+            <div class="toogle" id="toggleDiv">
+                <img id="toggleImage" src="src/assets/arrow_forward.svg" alt="">
+            </div>
+            </div>
+        </form>
+    </main>
+    <footer><img src="src/assets/logoFooter.png" alt=""></footer>
+    <script type="module" src="src/pages/productListing/productListing.js" defer></script>
+</body>
+
+</html>

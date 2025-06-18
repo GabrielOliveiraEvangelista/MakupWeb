@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../productListing/productListing.css">
+    <link rel="stylesheet" href="/src/pages/productSelect/productSelect.css">
+    <link rel="stylesheet" href="/src/pages/styles.css">
+    <title>Compusa Software</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a onclick="history.back(-1)"><img src="../../assets/back.svg" alt=""></a>
+                <img src="/src/assets/oriental.png" alt="">
+                <a onclick="history.back(-2)"><img src="/src/assets/clientSearch.svg" alt=""></a>
+            </nav>
+        </header>
+        <ul id="productSelect">
+            <li>
+                <div class="unitCode">
+                    <h2 name=":PRODU-SCF991" id=":PRODU-SCF991">:PRODU-SCF991</h2>
+                    <h2>:UNIVE-SCF991</h2>
+                    <div class="statusColor"></div>
+                </div>
+                <button class="btnProduct">
+                    <h2>:DESCR-SCF991</h2>
+                    <img src="/src/assets/arrowDownWhite.svg" alt="">
+                </button>
+                <div class="modalInfo">
+                    <div class="priceQnt">
+                        <div id="inputQnt">
+                            <label for="quantidade">Quantidade</label>
+                            <p class="removeMargin">238</p>
+                            <!-- <input class="styleInput" type="number" id=":WS-ID-QTD" name="quantidade" min="0" step="1"> -->
+                        </div>
+                        <div id="inputPrice">
+                            <label for="price">Preço proposto</label>
+                            <p>R$238,00</p>
+                            <!-- <input class="styleInput" type="number" id=":WS-ID-PRECO" name="price" min="0" step="1"> -->
+                        </div>
+                    </div>
+                    <div class="tableValueFixed">
+                        <div class="vlTotal">
+                            <h2>Valor total</h2>
+                            <p id=":WS-ID-VLTOT">:WS-VL-TOTAL</p>
+                        </div>
+                        <div class="markup">
+                            <h2>Markup</h2>
+                            <p id=":WS-ID-MKP">:WS-MKP-PROD</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <footer><img src="/src/assets/logoFooter.png" alt=""></footer>
+    </main>
+    <script type="module" src="./productSelect.js"></script>
+</body>
+
+</html>

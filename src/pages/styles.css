@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+fieldset {
+    border: none;
+}
+.boxAlignmentImg {
+    position: relative;
+}
+.imgAlignment {
+    position: absolute; 
+    right: 5%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem; 
+}
+#inputUser, #inputPassword {
+    height: 4.5rem;
+    width: 30rem;
+    padding-left: 1.6rem;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    
+    font-weight: 600;
+}
+select {
+    color: #aaa;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select:focus {
+    color: #000;
+}
+
+select option {
+    color: #000;
+}
+.btnForm {
+    color: #fff;
+    font-weight: bold;
+    background-color: #C62828;
+    border: none;
+    width: 20rem;
+    height: 5rem;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+}
+#inputUser:focus, #inputPassword:focus {
+    border: 2px solid #e85959;
+    outline: none;
+}
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #E0C8A7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

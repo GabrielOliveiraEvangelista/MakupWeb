@@ -1,0 +1,54 @@
+       R-HTML-MENU.
+         exec HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/pages/Menu/menu.css">
+    <link rel="stylesheet" href="/src/pages/styles.css">
+    <title>Compusa Software</title>
+</head>
+
+<body>
+    <div id="boxShadow">
+        <img id="imgDesktop" src="/src/assets/imgDesktop.jpg" alt="">
+        <main>
+            <img id="logoMobile" src="/src/assets/logoMobile.svg" alt="Logo da Compusa Software">
+            <form>
+                <h2>FACA SEU LOGIN</h2>
+                <fieldset class="boxAlignmentImg">
+                    <select name="inputUser" id="inputUser" required>
+                        <option value="" disabled selected hidden>Usuario</option>
+<!--
+         end-exec
+         .
+
+       R-HTML-MENU-REP.
+         exec html
+*> -->
+                        <option value=":ICODI-SCR008">:IUSUARIO-SCR008</option>
+<!--
+         end-exec
+         .
+
+       R-HTML-MENU-FIM.
+         exec html
+*> -->
+                        <!-- Adicione outras opções conforme necessário -->
+                    </select>
+                    <img class="imgAlignment" src="/src/assets/arrowDown.svg" alt="Seta de Dropdown">
+                </fieldset>
+                <fieldset class="boxAlignmentImg" id="boxInputPassword">
+                    <input type="password" name="inputPassword" placeholder="Senha" id="inputPassword" required>
+                    <img class="imgAlignment" id="togglePassword" src="/src/assets/visibility_off.svg" alt="Mostrar Senha">
+                </fieldset>
+                <button class="btnForm" type="submit" value="ENTRAR" name="FUNCAO" id="FUNCAO">Entrar</button>
+            </form>
+        </main>
+    </div>
+    <script type="module" src="/src/pages/Menu/menu.js"></script>
+</body>
+
+</html>

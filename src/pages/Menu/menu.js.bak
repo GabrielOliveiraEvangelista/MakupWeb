@@ -1,0 +1,32 @@
+const togglePassword = document.getElementById('togglePassword');
+const passwordInput = document.getElementById('inputPassword');
+const selectUser = document.getElementById('inputUser');
+
+selectUser.addEventListener('change', function() {
+    if (this.value === "") {
+        this.style.color = "#aaa"; // Cor do placeholder
+    } else {
+        this.style.color = "#000"; // Cor do texto após seleção
+    }
+});
+togglePassword.addEventListener('click', function() {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+
+    const iconPath = type === 'password' ? '/src/assets/visibility_off.svg' : '/src/assets/visibility.svg';
+    togglePassword.setAttribute('src', iconPath);
+});
+window.addEventListener('resize', function() {
+    const logoMobile = document.getElementById('logoMobile');
+    const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 1439px)');
+
+    // Verifica se a largura da tela está entre 425px e 1024px
+    if (mediaQuery.matches) {
+        logoMobile.src = '/src/assets/logoTablet.svg'; // Caminho da nova imagem
+    } else {
+        logoMobile.src = '/src/assets/logoMobile.svg'; // Caminho da imagem original
+    }
+});
+
+// Executa a função também ao carregar a página
+window.dispatchEvent(new Event('resize'));

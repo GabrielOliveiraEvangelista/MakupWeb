@@ -1,0 +1,55 @@
+       R-HTML-CLIENTE.
+         exec HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/pages/selectClient/selectClient.css">
+    <link rel="stylesheet" href="src/pages/styles.css">
+
+    <title>Compusa Software</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <img src="src/assets/oriental.png" alt="">
+            </nav>
+        </header>
+        <div id="modal">
+            <h2>Selecione o cliente desejado</h2>
+            <form>
+                <fieldset class="boxAlignmentImg">
+                    <select name="CODIGOSCR155" id="inputUser" required>
+                        <option value="" disabled selected hidden>Cliente</option>
+<!--
+         end-exec
+         .
+
+       R-HTML-CLIENTE-MEIO.
+         exec html
+*> -->
+                        <option value=":ICODIGO-SCR155">:INOME-SCR155</option>
+<!--
+         end-exec
+         .
+
+       R-HTML-CLIENTE-FIM.
+         exec html
+*> -->
+                        <!-- Adicione outras opções conforme necessário -->
+                    </select>
+                    <img class="imgAlignment" src="src/assets/arrowDown.svg" alt="Seta de Dropdown">
+                </fieldset>
+                <button class="btnForm" name="FUNCAO" value="PRODUTO" type="submit">Selecionar</button>
+            </form>
+        </div>
+    </main>
+    <footer><img src="src/assets/logoFooter.png" alt=""></footer>
+    <script type="module" src="src/pages/selectClient/selectClient.js"></script>
+</body>
+
+</html>
